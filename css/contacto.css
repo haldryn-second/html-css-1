@@ -1,0 +1,109 @@
+ form {
+     margin: 5% auto;
+     padding: 2% 4%;
+     background: #222222;
+     border-radius: 8px;
+     width: 45%;
+     text-align: center;
+ }
+ 
+ input[type="text"],
+ input[type="email"],
+ input[type="number"],
+ input[type="tel"] {
+     background: rgba(255, 255, 255, 0.1);
+     border: none;
+     font-size: 16px;
+     height: auto;
+     margin: 0;
+     outline: 0;
+     width: 90%;
+     padding: 15px;
+     background-color: #EDF0F2;
+     color: #8a97a0;
+     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+     margin-bottom: 30px;
+ }
+ 
+ input[type="checkbox"] {
+     margin: 0 4px 8px 0;
+ }
+ 
+ label {
+     color: #EDF0F2;
+ }
+ 
+ input[type="button"] {
+     padding: 19px 39px 18px 39px;
+     color: black;
+     background-color: #58D3F7;
+     font-size: 18px;
+     text-align: center;
+     font-style: normal;
+     width: 90%;
+     border: 1px solid #58D3F7;
+     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+     margin-bottom: 10px;
+ }
+ 
+ input[type="button"]:hover {
+     background-color: #BEEDFB;
+     border: 1px solid #BEEDFB;
+ }
+ 
+ section {
+     position: relative;
+ }
+ 
+ address {
+     text-align: right;
+ }
+ 
+ address a {
+     position: relative;
+     padding: 10px;
+     background: white;
+     top: 42px;
+     z-index: 2;
+     text-decoration: none;
+     color: rgb(73, 142, 226);
+     box-shadow: 0px 5px 10px -6px rgba(148, 148, 148, 0.75);
+     margin-bottom: 1%;
+     margin-right: 8px;
+ }
+ 
+ address a:hover {
+     text-decoration-line: underline;
+ }
+ 
+ iframe {
+     position: relative;
+     border: 1px solid #BEEDFB;
+     height: 250px;
+     width: 100%;
+     z-index: 1;
+ }
+ 
+ @media screen and (max-width: 1024px) {
+     form {
+         padding: 4% 4%;
+         width: 90%;
+     }
+ }
+ 
+ @media screen and (max-width: 653px) and (min-width: 481px) {
+     form {
+         padding: 4% 4%;
+         width: 90%;
+     }
+ }
+ 
+ @media screen and (max-width: 480px) {
+     form {
+         padding: 4% 4%;
+         width: 90%;
+     }
+     h1 {
+         font-size: 25px;
+     }
+ }

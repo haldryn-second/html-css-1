@@ -130,9 +130,6 @@ footer small {
 }
 
 @media screen and (max-width: 1024px) {
-    body {
-        background-color: aqua;
-    }
     .main {
         display: inline-block;
         width: 90%;
@@ -147,9 +144,6 @@ footer small {
 }
 
 @media screen and (max-width: 653px) and (min-width: 481px) {
-    body {
-        background-color: red;
-    }
     .main {
         display: inline-block;
         width: 86%;
@@ -182,9 +176,6 @@ footer small {
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        background-color: blueviolet;
-    }
     .main {
         display: inline-block;
         width: 84%;

@@ -2,7 +2,7 @@ function accionPlay() {
     if (!medio.paused && !medio.ended) {
         medio.pause();
         play.value = '\u25BA'; //\u25BA
-        document.body.style.backgroundColor = '#fff';
+        document.body.style.backgroundColor = '#EDF0F2';
     } else {
         medio.play();
         play.value = '||';
@@ -11,14 +11,15 @@ function accionPlay() {
 }
 
 function accionReiniciar() {
-    //Usar propiedad .currentTime
-    //Reproducir el vídeo
-    //Cambiar el valor del botón a ||
+    medio.pause();
+    medio.currentTime = 0;
+    accionPlay();
 }
 
 function accionRetrasar() {
     //Usar propiedad .curentTime
     //Contemplar que no existen valores negativos
+
 }
 
 function accionAdelantar() {

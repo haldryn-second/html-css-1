@@ -30,7 +30,7 @@ blockquote {
 
 iframe {
     margin-bottom: 3%;
-    width: 50%;
+    width: 700px;
     height: 320px;
 }
 
@@ -84,11 +84,20 @@ aside li a:hover {
     transform: translateY(10px);
 }
 
+.videoplaya {
+    width: 700px;
+    height: 350px;
+    margin-bottom: 3%;
+}
+
 @media screen and (max-width: 1024px) {
     section {
         width: 100%;
     }
     iframe {
+        width: 95%;
+    }
+    .videoplaya {
         width: 95%;
     }
     aside {

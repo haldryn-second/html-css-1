@@ -84,9 +84,13 @@ aside li a:hover {
     transform: translateY(10px);
 }
 
-.videoplaya {
+.videos {
     width: 700px;
     height: 350px;
+    margin-bottom: 3%;
+}
+
+.videonav {
     margin-bottom: 3%;
 }
 
@@ -97,7 +101,7 @@ aside li a:hover {
     iframe {
         width: 95%;
     }
-    .videoplaya {
+    .video {
         width: 95%;
     }
     aside {

@@ -74,11 +74,29 @@
             </article>
 
             <article>
-                <video id="medio" class="videoplaya" width="700" height="350" controls>
+                <video class="videos">
                     <source src="videos/videoplaya.mp4">
                     <source src="videos/videoplaya.ogg">
                     <source src="videos/videoplaya.webm">
                </video>
+            </article>
+
+            <article>
+                <video id="medio" class="videos">
+                    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
+                    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
+                  </video>
+
+                <nav class="videonav">
+                    <input type="button" id="reiniciar" value="reiniciar">
+                    <input type="button" id="retrasar" value="&laquo;">
+                    <input type="button" id="play" value="&#9658;">
+                    <input type="button" id="adelantar" value="&raquo;">
+                    <input type="button" id="silenciar" value="silenciar">
+                    <label>Volumen</label>
+                    <input type="button" id="menosVolumen" value="-">
+                    <input type="button" id="masVolumen" value="+">
+                </nav>
             </article>
 
         </section>
@@ -128,5 +146,6 @@
     </footer>
 
 </body>
+<script type="text/javascript" src="js/video.js"></script>
 
 </html>

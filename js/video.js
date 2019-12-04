@@ -17,25 +17,29 @@ function accionReiniciar() {
 }
 
 function accionRetrasar() {
-    //Usar propiedad .curentTime
-    //Contemplar que no existen valores negativos
+    medio.currentTime = medio.currentTime - 5;
 
 }
 
 function accionAdelantar() {
-    //Contemplar que no existen valores mayores a medio.duration	
+    medio.currentTime = medio.currentTime + 5;
 }
 
 function accionSilenciar() {
-    //Utilizar medio.muted = true; o medio.muted = false;
+    if (medio.muted) {
+        medio.muted = false;
+    } else {
+        medio.muted = true;
+    }
 }
 
 function accionMasVolumen() {
-    //Contemplar que el valor máximo de volumen es 1
+    medio.volume = medio.volume + 0.1
+
 }
 
 function accionMenosVolumen() {
-    //Contemplar que el valor mínimo de volumen es 0
+    medio.volume = medio.volume - 0.1
 }
 
 function iniciar() {

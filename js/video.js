@@ -61,3 +61,42 @@ function iniciar() {
 }
 
 window.addEventListener('load', iniciar, false);
+
+
+function campanaAudio() {
+    var reproducir = new Audio();
+    reproducir = document.getElementById("campana");
+    reproducir.play();
+
+}
+
+function dripAudio() {
+    var reproducir = new Audio();
+    reproducir = document.getElementById("drip");
+    reproducir.play();
+
+}
+
+function golpeAudio() {
+    var reproducir = new Audio();
+    reproducir = document.getElementById("golpe");
+    reproducir.play();
+
+}
+
+function wishAudio() {
+    var reproducir = new Audio();
+    reproducir = document.getElementById("wish");
+    reproducir.play();
+
+}
+
+function iniciaraudio() {
+    button = document.querySelectorAll("button");
+    button[0].addEventListener("click", campanaAudio, false);
+    button[1].addEventListener("click", dripAudio, false);
+    button[2].addEventListener("click", golpeAudio, false);
+    button[3].addEventListener("click", wishAudio, false);
+}
+
+window.addEventListener("load", iniciaraudio, false);

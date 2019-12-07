@@ -6,6 +6,8 @@ section {
 
 section h1 {
     margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 2%;
 }
 
 section p {
@@ -17,6 +19,10 @@ section p {
 
 section img {
     margin-top: 2%;
+}
+
+article {
+    margin-bottom: 2%;
 }
 
 figcaption {
@@ -114,6 +120,39 @@ article h2 {
 .button:hover {
     background-color: #BEEDFB;
     border: 1px solid #BEEDFB;
+}
+
+.div {
+    width: 1%;
+    background: #0096FE;
+    color: #0096FE;
+    position: absolute;
+    animation-name: animar;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animar {
+    0% {
+        left: 10%;
+        top: 9%;
+    }
+    25% {
+        left: 20%;
+        top: 9%;
+    }
+    50% {
+        top: 13%;
+        left: 20%;
+    }
+    75% {
+        top: 13%;
+        left: 10%;
+    }
+    100% {
+        top: 9%;
+        left: 10%;
+    }
 }
 
 @media screen and (max-width: 1024px) {

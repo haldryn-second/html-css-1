@@ -124,7 +124,6 @@ article h2 {
 
 .div {
     width: 2%;
-    color: #0096FE;
     background-image: linear-gradient(to bottom right, red, yellow);
     position: absolute;
     animation-name: animar;

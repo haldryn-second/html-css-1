@@ -123,35 +123,70 @@ article h2 {
 }
 
 .div {
-    width: 1%;
-    background: #0096FE;
+    width: 2%;
     color: #0096FE;
+    background-image: linear-gradient(to bottom right, red, yellow);
     position: absolute;
     animation-name: animar;
-    animation-duration: 50s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes animar {
     0% {
-        left: 10%;
-        top: 9%;
+        height: 2%;
+        width: 157px;
+        left: 9%;
+        top: 75px;
+    }
+    12.5% {
+        height: 2%;
+        width: 2%;
+        left: 18%;
+        top: 75px;
     }
     25% {
-        left: 20%;
-        top: 9%;
+        height: 8%;
+        left: 18%;
+        top: 75px;
+        width: 2%;
+    }
+    37.5% {
+        height: 2%;
+        top: 120px;
+        left: 18%;
+        width: 2%;
     }
     50% {
-        top: 13%;
-        left: 20%;
+        width: 157px;
+        height: 2%;
+        top: 120px;
+        left: 9%;
+    }
+    62.5% {
+        width: 2%;
+        height: 2%;
+        top: 120px;
+        left: 9%;
     }
     75% {
-        top: 13%;
-        left: 10%;
+        width: 2%;
+        height: 8%;
+        top: 75px;
+        left: 9%;
+    }
+    87.5% {
+        height: 2%;
+        width: 2%;
+        left: 9%;
+        top: 75px;
     }
     100% {
-        top: 9%;
-        left: 10%;
+        height: 2%;
+        width: 157px;
+        left: 9%;
+        top: 75px;
     }
 }
 

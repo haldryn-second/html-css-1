@@ -91,10 +91,10 @@ function accionesJuego() {
 }
 
 function pintarLienzo(lienzo) {
-    lienzo.fillStyle = "#F7F9FA"; //le ponemos un color al lienzo
-    lienzo.fillRect(0, 0, canvas.width, canvas.height); //Dibujamos el lienzo
+    lienzo.fillStyle = "#F7F9FA";
+    lienzo.fillRect(0, 0, canvas.width, canvas.height);
     lienzo.fillStyle = '#0f0';
-    lienzo.fillRect(x, y, 5, 5); //Dibujamos el jugador: va por posición x,y y es de 10x10       
+    lienzo.fillRect(x, y, 5, 5);
 }
 
 document.addEventListener('keydown', function(evt) {

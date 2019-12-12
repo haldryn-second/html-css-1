@@ -44,8 +44,6 @@ var x = 50,
     y = 50;
 var lastPress = null;
 
-//Variable para guardar la tecla presionada
-//En nuestro juego, usaremos las teclas izquierda, arriba, derecha y abajo, cuyos valores numéricos son 37, 38, 39 y 40 respectivamente.
 const KEY_LEFT = 37;
 const KEY_UP = 38;
 const KEY_RIGHT = 39;
@@ -55,6 +53,7 @@ function animacion() {
     canvas = document.getElementById('animacion');
     lienzo = canvas.getContext('2d'); //obtenemos el contexto de dibujo
     run();
+    alert(run);
 }
 
 function run() {
@@ -76,7 +75,6 @@ function accionesJuego() {
         y += 5;
     }
 
-
     //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
     if (x >= canvas.width) {
         x = 0;
@@ -87,7 +85,6 @@ function accionesJuego() {
     } else if (y < 0) {
         y = canvas.height;
     }
-
 }
 
 function pintarLienzo(lienzo) {

@@ -221,3 +221,9 @@ canvas {
         padding-left: 3%;
     }
 }
+
+@media screen and (max-width: 640px) {
+    canvas {
+        width: 100%;
+    }
+}

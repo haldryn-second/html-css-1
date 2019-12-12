@@ -48,12 +48,22 @@ const KEY_LEFT = 37;
 const KEY_UP = 38;
 const KEY_RIGHT = 39;
 const KEY_DOWN = 40;
-const KEY_ESPACIO = 32;
+const KEY_P = 80;
+var pause = true;
+
 
 function animacion() {
     canvas = document.getElementById('animacion');
     lienzo = canvas.getContext('2d'); //obtenemos el contexto de dibujo
+
+    if (!pause) {
+        lienzo.textAlign = 'center';
+        lienzo.fillStyle = 'red';
+        lienzo.fillText('PAUSE', 50, 50);
+        lienzo.textAlign = 'left';
+    }
     run();
+
 }
 
 function run() {
@@ -64,35 +74,34 @@ function run() {
 }
 
 function accionesJuego() {
-    //Modificamos la dirección que tendrá nuestro player en función de la tecla presionada   
-    if (lastPress == KEY_RIGHT) {
-        x += 5;
-    } else if (lastPress == KEY_LEFT) {
-        x -= 5;
-    } else if (lastPress == KEY_UP) {
-        y -= 5;
-    } else if (lastPress == KEY_DOWN) {
-        y += 5;
-    } else if (lastPress != KEY_ESPACIO && lastPress != null) {
-        x = x;
-        y = y;
+    if (!pause) {
+
+        //Modificamos la dirección que tendrá nuestro player en función de la tecla presionada   
+        if (lastPress == KEY_RIGHT) {
+            x += 5;
+        } else if (lastPress == KEY_LEFT) {
+            x -= 5;
+        } else if (lastPress == KEY_UP) {
+            y -= 5;
+        } else if (lastPress == KEY_DOWN) {
+            y += 5;
+        }
+        //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
+        if (x >= canvas.width) {
+            x = 0;
+        } else if (x < 0) {
+            x = canvas.width
+        } else if (y >= canvas.height) {
+            y = 0;
+        } else if (y < 0) {
+            y = canvas.height;
+        }
     }
 
-    //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
-    if (x >= canvas.width) {
-        x = 0;
-    } else if (x < 0) {
-        x = canvas.width
-    } else if (y >= canvas.height) {
-        y = 0;
-    } else if (y < 0) {
-        y = canvas.height;
+    if (lastPress == KEY_P) {
+        pause = !pause;
+        lastPress = null;
     }
-
-
-    // else {
-    //     continue;
-    // }
 }
 
 function pintarLienzo(lienzo) {

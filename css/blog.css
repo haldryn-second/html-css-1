@@ -122,6 +122,12 @@ article h2 {
     border: 1px solid #BEEDFB;
 }
 
+canvas {
+    width: 95%;
+    height: 500px;
+    background-color: #a1a1a1;
+}
+
 .div {
     width: 2%;
     background-image: linear-gradient(to bottom right, red, yellow);
@@ -200,9 +206,8 @@ article h2 {
     section {
         width: 100%;
     }
-    iframe {
-        width: 95%;
-    }
+    iframe,
+    .videos,
     .video {
         width: 95%;
     }

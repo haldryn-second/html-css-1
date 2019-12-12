@@ -48,12 +48,12 @@ const KEY_LEFT = 37;
 const KEY_UP = 38;
 const KEY_RIGHT = 39;
 const KEY_DOWN = 40;
+const KEY_ESPACIO = 32;
 
 function animacion() {
     canvas = document.getElementById('animacion');
     lienzo = canvas.getContext('2d'); //obtenemos el contexto de dibujo
     run();
-    alert(run);
 }
 
 function run() {
@@ -73,6 +73,9 @@ function accionesJuego() {
         y -= 5;
     } else if (lastPress == KEY_DOWN) {
         y += 5;
+    } else if (lastPress != KEY_ESPACIO && lastPress != null) {
+        x = x;
+        y = y;
     }
 
     //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
@@ -85,6 +88,11 @@ function accionesJuego() {
     } else if (y < 0) {
         y = canvas.height;
     }
+
+
+    // else {
+    //     continue;
+    // }
 }
 
 function pintarLienzo(lienzo) {

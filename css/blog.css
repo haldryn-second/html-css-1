@@ -123,9 +123,9 @@ article h2 {
 }
 
 canvas {
-    width: 95%;
-    height: 500px;
-    background-color: #a1a1a1;
+    width: 650px;
+    height: 400px;
+    background-color: grey;
 }
 
 .div {

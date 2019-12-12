@@ -130,6 +130,7 @@ article h2 {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    display: none;
 }
 
 @keyframes animar {
@@ -153,20 +154,20 @@ article h2 {
     }
     37.5% {
         height: 2%;
-        top: 120px;
+        top: 125px;
         left: 18%;
         width: 2%;
     }
     50% {
         width: 157px;
         height: 2%;
-        top: 120px;
+        top: 125px;
         left: 9%;
     }
     62.5% {
         width: 2%;
         height: 2%;
-        top: 120px;
+        top: 125px;
         left: 9%;
     }
     75% {
@@ -186,6 +187,12 @@ article h2 {
         width: 157px;
         left: 9%;
         top: 75px;
+    }
+}
+
+@media screen and (max-width: 2150px) and (min-width: 1400px) {
+    .div {
+        display: inline;
     }
 }
 

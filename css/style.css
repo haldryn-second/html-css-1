@@ -129,6 +129,20 @@ footer small {
     margin-right: 15px;
 }
 
+body {
+    animation-name: despe;
+    animation-duration: 2s;
+}
+
+@keyframes despe {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .main {
         display: inline-block;

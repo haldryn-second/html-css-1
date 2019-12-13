@@ -55,13 +55,6 @@ var pause = true;
 function animacion() {
     canvas = document.getElementById('animacion');
     lienzo = canvas.getContext('2d'); //obtenemos el contexto de dibujo
-
-    if (!pause) {
-        lienzo.textAlign = 'center';
-        lienzo.fillStyle = 'red';
-        lienzo.fillText('PAUSE', 50, 50);
-        lienzo.textAlign = 'left';
-    }
     run();
 
 }
@@ -108,7 +101,14 @@ function pintarLienzo(lienzo) {
     lienzo.fillStyle = "#F7F9FA";
     lienzo.fillRect(0, 0, canvas.width, canvas.height);
     lienzo.fillStyle = '#0f0';
-    lienzo.fillRect(x, y, 5, 5);
+    lienzo.fillRect(x, y, 10, 10);
+
+    if (pause) {
+        lienzo.textAlign = 'center';
+        lienzo.fillStyle = 'red';
+        lienzo.fillText('PAUSE', 50, 50);
+        lienzo.textAlign = 'left';
+    }
 }
 
 document.addEventListener('keydown', function(evt) {

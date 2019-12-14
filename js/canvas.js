@@ -54,22 +54,19 @@ var pause = true;
 
 function animacion() {
     canvas = document.getElementById('animacion');
-    lienzo = canvas.getContext('2d'); //obtenemos el contexto de dibujo
+    lienzo = canvas.getContext('2d');
     run();
 
 }
 
 function run() {
-    //requestAnimationFrame(): informa al navegador de que quieres realizar una animación y solicita que el navegador programe el repintado de la ventana para el próximo ciclo de animación.
-    requestAnimationFrame(run); //animación optimizada
+    requestAnimationFrame(run);
     accionesJuego();
     pintarLienzo(lienzo);
 }
 
 function accionesJuego() {
     if (!pause) {
-
-        //Modificamos la dirección que tendrá nuestro player en función de la tecla presionada   
         if (lastPress == KEY_RIGHT) {
             x += 5;
         } else if (lastPress == KEY_LEFT) {
@@ -79,7 +76,7 @@ function accionesJuego() {
         } else if (lastPress == KEY_DOWN) {
             y += 5;
         }
-        //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
+
         if (x >= canvas.width) {
             x = 0;
         } else if (x < 0) {
@@ -114,7 +111,6 @@ function pintarLienzo(lienzo) {
 }
 
 document.addEventListener('keydown', function(evt) {
-        //Creamos un manejador de evento para el teclado que se encargue de almacenar la tecla presionada. El evento que nos interesa en este caso es keydown
         lastPress = evt.keyCode;
     },
     false

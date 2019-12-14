@@ -1,7 +1,7 @@
 function accionPlay() {
     if (!medio.paused && !medio.ended) {
         medio.pause();
-        play.value = '\u25BA'; //\u25BA
+        play.value = '\u25BA';
         document.body.style.backgroundColor = '#EDF0F2';
     } else {
         medio.play();

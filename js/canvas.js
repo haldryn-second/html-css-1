@@ -10,7 +10,7 @@ function iniciar() {
     ctx.fillStyle = "#58D3F7";
     ctx.fill();
 
-    ctx.font = 'Bold 12px Tahoma';
+    ctx.font = 'Bold 16px Tahoma';
     ctx.textAlign = 'center';
     ctx.fillStyle = 'white';
     ctx.fillText('HTML', 95, 50);
@@ -19,7 +19,7 @@ function iniciar() {
     ctx.moveTo(75, 52);
     ctx.lineTo(115, 52);
     ctx.lineWidth = 1;
-    ctx.strokeStyle = "orange";
+    ctx.strokeStyle = "black";
     ctx.stroke();
 
 
@@ -104,10 +104,12 @@ function pintarLienzo(lienzo) {
     lienzo.fillRect(x, y, 10, 10);
 
     if (pause) {
+        lienzo.font = 'Bold 20px Tahoma';
         lienzo.textAlign = 'center';
         lienzo.fillStyle = 'red';
-        lienzo.fillText('PAUSE', 50, 50);
-        lienzo.textAlign = 'left';
+        lienzo.fillText('PAUSE', 300, 75);
+        lienzo.font = '16px Tahoma';
+        lienzo.fillText('(pulse "p" para comenzar o seguir jugando)', 300, 100);
     }
 }
 
